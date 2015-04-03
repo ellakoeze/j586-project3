@@ -1,0 +1,149 @@
+
+
+h1{
+    font-family: "bookmania";
+    margin: 0;
+    padding-bottom:0px;
+    
+}
+
+h3{
+    font-family: "bookmania";
+    margin: 6px 0;
+    
+}
+
+
+body{
+    font-family: "Droid Serif";
+}
+
+iframe {
+    border-style: none;
+    width: 100%;
+    height: 500px;
+    
+}
+
+select {
+    background: white;
+    font-family: "news-gothic-std";
+}
+
+table{
+   font-family: "news-gothic-std"; 
+}
+
+.header{
+    height: 50px;
+    background-color: #000;
+    margin-bottom: 30px;
+   width: 90%;
+   display: inline-block;
+   
+}
+.header1{
+    height: 50px;
+    background-color: #C9797D;
+    margin-bottom: 30px;
+    width:10%;
+    display: inline-block;
+}
+.intro{
+    margin-bottom: 20px;
+    
+}
+
+.source{
+    font-size: smaller;
+    font-style: italic;
+   
+}
+
+.table-container{
+   font-family: "news-gothic-std";
+   margin-bottom: 10px;
+   padding-bottom: 4px;
+   border-bottom: solid #000 1px;
+}
+
+
+.rule{
+    height:7px;
+    background: #C9797D;
+    margin-top: 10px;
+    
+    
+}
+.bottom-rule{
+    border-bottom: solid #000 1px;
+    padding-bottom: 10px ;
+}
+
+/*.left-align{
+    padding-left: 0px;
+    margin-left: 0px;
+}*/
+
+#page-intro{
+    font-size: larger;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+#chart1{
+    width: 800px;
+    height: 400px;
+    margin: 0 auto
+}
+
+#chart2{
+    width: 820px;
+    height: 600px;
+    margin: 0 auto
+}
+
+/*.table-container{
+   overflow: scroll; 
+}*/
+
+@media screen and (max-width: 480px) {   
+    select{
+        margin-top: 3px;
+        margin-bottom: 3px;
+        margin-right: auto;
+        margin-left: 3px;
+    }
+    
+    h1{
+        padding: 3px;
+    }
+    
+    h3{
+        padding: 3px;
+    }
+    
+    p{
+        padding: 3px;
+    }
+    
+    iframe{
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .chart2-container{
+        overflow: scroll;
+    }
+    
+    #chart1{
+        width: 390px;
+        height: 400px;
+    }
+    
+    #chart2{
+        width: 670px;
+        height: 450px;
+    }
+}
+

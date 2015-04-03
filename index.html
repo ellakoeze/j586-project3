@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Family Planning Funding Data Dashboard</title>
+    <meta charset="UTF-8">
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link href='css/styles.css' rel='stylesheet'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+    <link href="http://cdn.datatables.net/1.10.5/css/jquery.dataTables.css" rel="stylesheet">
+    <script src='https://code.jquery.com/jquery-1.11.0.min.js'></script>
+    <script src="//use.typekit.net/rzb0lfn.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/highcharts-more.js"></script>
+    <script src="http://cdn.datatables.net/1.10.5/js/jquery.dataTables.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/data2.js"></script>
+    <script src="js/chartstyles.js"></script>
+  
+</head>
+
+<body>
+  <div class="row">
+    <div class="header1 col-md-1"></div>
+    <div class="header col-md-11"></div>
+    </div>
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-md-12 left-align">
+                <h1 class="bottom-rule">Public funding for family planning and abortion services</h1>
+            <p id="page-intro">A wide range of state and federal regulations determine how public funds are spent to support reproductive health services for women. Women's choices regarding sex and reproduction generate more controversy and inspire more pieces of restrictive legislation than most other areas of public debate, especially in conservative leaning states. Unfortunately, most of these regulations disproportionately impact poor and uninsured women who rely on publicly funded programs such as Medicaid and Title X for reproductive health services. Public funding for abortion is especially restricted, making abortion increasingly less available to poor and uninsured women. Use the charts and map below to explore these topics.</p>
+            </div>
+        </div>
+
+        
+<div class="row">
+    <div class="col-md-12">
+        <div class="rule"></div>
+        <h3 class="bottom-rule">Total reported public expenditures for reproductive services by state, 2010.</h3>
+        <p class="intro">Use the dropdown menus to compare how public money is allocated for reproductive services in each state.</p>
+       
+         <select id="selectcontainer" name="selectcontainer"  size="1" onchange="process(); makeChart();">
+      </select>
+        
+         <select id="selectcontainer2" name="selectcontainer2"  size="1" onchange="process(); makeChart();">
+      </select>
+         <select id="selectcontainer3" name="selectcontainer3"  size="1" onchange="process(); makeChart();">
+      </select>
+        <div class="chart2-container">
+        <div id="chart2"></div>
+        <span class="source">Source: <a href="http://www.guttmacher.org/index.html">The Guttmacher Institute</a></span>
+        </div>
+        
+    </div>
+</div>
+
+   <div class="row">
+            <div class="col-md-12 left-align">
+                <div class="rule"></div>
+                <h3 class="bottom-rule">Demographics and reproductive outcomes by state.</h3>
+                <p class="intro">Use the dropdown menu to compare different demographic measures and reproductive outcomes by state. Click or hover on each state to see details.</p>
+                <iframe src="http://ellakoeze.com/projects/j586/project3/map/" ></iframe>
+            </div>
+        </div>
+        <div class="row">
+
+<div class="row">
+    <div class="col-md-12 left-align">
+        <div class="rule"></div>
+        <h3 class="bottom-rule">Women living in counties without an abortion provider by state.</h3>
+        <p class="intro">Use the dropdown menus to compare trends over time in the percentage of women living in counties without an abortion provider by state.</p>
+        <select id="selectbox" name="selectbox"  size="1" onchange="run(); buildChart();">
+      </select>
+         <select id="selectbox2" name="selectbox"  size="1" onchange="run(); buildChart();">
+      </select>
+          <select id="selectbox3" name="selectbox"  size="1" onchange="run(); buildChart();">
+      </select>
+        <div id="chart1"></div>
+        <span class="source">Source: <a href="http://www.guttmacher.org/index.html">The Guttmacher Institute</a></span>
+    </div>
+    
+</div>
+
+
+
+<div class="row">
+     
+            <div class="col-md-12 left-align">
+                
+                <div class="rule"></div>
+                <h3 class="bottom-rule">States by the numbers</h3>
+                <p class="intro">Search for a particular state to see the variables from the map above.</p>
+                <div class="table-container">
+               <table id="table" class="display hover" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        <th>State</th>
+                        <th>Population</th>
+                        <th>Female Population</th>
+                        <th>Women in need of publicly funded contraceptive services</th>
+                        <th>Uninsured women in need of publicly funded contraceptive services</th>
+                        <th>Women below the federal poverty level in need of publicly funded contraceptive services</th>
+                        <th>Publicly funded family planning centers</th>
+                        <th>Unintended pregnancies (per 1000 women)</th>
+                        <th>Teen pregnancies (per 1000 women ages, 15-19)</th>
+                        <th>Counties without a known abortion provider</th>
+                        <th>Abortions by state of occurrence (per 1000 women)</th>
+                        <th>Abortions by state of residence (per 1000 women) </th>
+                    </tr>
+                </thead>
+ 
+       </div>
+            </div>
+                </div>
+        </div>
+        
+
+</body>
+</html>
